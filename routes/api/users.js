@@ -12,7 +12,7 @@ const User = require("../../models/User");
 // @desc     Register user
 // @access   Public
 router.post(
-  "/",                                                                            
+  "/",
   [
     check("name", "Name is required").not().isEmpty(),
     check("email", "Email is required").isEmail(),
@@ -65,14 +65,14 @@ router.post(
       };
 
       jwt.sign(
-        payload, 
+        payload,
         config.get("jwtSecret"),
-        {expiresIn: 36000000}, 
+        { expiresIn: 36000000 },
         (err, token) => {
-          if(err) throw err;
-          res.send({token})
-        });
-
+          if (err) throw err;
+          res.send({ token });
+        }
+      );
     } catch (error) {
       console.error(error.message);
       res.status(500).send("server error");

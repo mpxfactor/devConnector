@@ -1,4 +1,6 @@
 {
     "mongoURI":"mongodb+srv://mpxfactor:B4QdMHZsFezU53IG@devconnector.qoid6fu.mongodb.net/?retryWrites=true&w=majority",
-    "jwtSecret":"mpxfactortoken"
+    "jwtSecret":"mpxfactortoken",
+    "githubClientId":"106cbb58954074906909",
+    "githubSecret":"fe3645f330893fb34dc3c487dc8b1b62f9ccb6a8"
 }
